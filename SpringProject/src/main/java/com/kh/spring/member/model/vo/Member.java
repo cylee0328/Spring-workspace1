@@ -2,8 +2,12 @@ package com.kh.spring.member.model.vo;
 
 import java.sql.Date;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 /*
  * lombok
@@ -29,7 +33,11 @@ import lombok.Data;
 @ToString // toString 자동생성
 @EqualsAndHashCode // equals, hashcode 자동생성
 */
-@Data
+@Getter
+@Setter
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class Member {
 	private int userNo;
@@ -41,5 +49,5 @@ public class Member {
 	private Date enrollDate;
 	private Date modifyDate;
 	private String status;
-	private String profileImg;
+	private String profileImage;
 }
