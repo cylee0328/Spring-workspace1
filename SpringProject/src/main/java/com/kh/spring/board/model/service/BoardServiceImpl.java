@@ -61,6 +61,7 @@ public class BoardServiceImpl implements BoardService{
 	
 	// 게시글 상세조회 구현 서비스 
 	public Board selectBoardDetail(int boardNo) {
+		
 		return boardDao.selectBoardDetail(boardNo);
 	}
 	
